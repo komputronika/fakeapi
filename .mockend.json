@@ -10,6 +10,14 @@
   "Rows": {
     "service_id": { "string": {} },
     "name": { "string": {} },
-    "minimum": { "string": {} }
+    "minimum":  {
+      "int": {
+        "min": 1,
+        "max": 5
+      }
+    },
+    "service": {
+      "belongsTo": "Post"
+    }
   }
 }

@@ -3,7 +3,7 @@
     "title": { "string": {} },
     "comments": {
         "body": { "string": {} },
-        "who": { "string": {} },
+        "who": { "string": {} }
+          }
     }
-  }
 }

@@ -1,21 +1,14 @@
 {
   "Post": {
-    "status": { "string": {} },
-    "action": { "string": {} },
-    "session_id": { "string": {} },
-    "data": {
-      "hasMany": "Service"
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
     }
   },
-  
-  "Service": {
-    "service_id": { "string": {} },
-    "name": { "string": {} },
-    "minimum":  {
-      "int": {
-        "min": 1,
-        "max": 5
-      }
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
     }
   }
 }

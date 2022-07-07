@@ -4,10 +4,11 @@
     "action": { "string": {} },
     "session_id": { "string": {} },
     "data": {
-      "hasMany": "Rows"
+      "hasMany": "Service"
     }
   },
-  "Rows": {
+  
+  "Service": {
     "service_id": { "string": {} },
     "name": { "string": {} },
     "minimum":  {
@@ -15,9 +16,6 @@
         "min": 1,
         "max": 5
       }
-    },
-    "service": {
-      "belongsTo": "Post"
     }
   }
 }
